@@ -56,5 +56,17 @@ public class BasicCoreJava {
             System.out.print((double) 1 / i +"  ");
         }
         System.out.println("\nHarmonic no = " +1/har);
+
+        // Prime Factors
+        System.out.println("enter the no. :");
+        int primeNumber = input.nextInt();
+        for (int i = 2; i*i  <= primeNumber; i++) {
+            while (primeNumber % i == 0) {
+                System.out.println(i + " ");
+                primeNumber = primeNumber / i;
+            }
+        }
+        if (primeNumber >= 2)
+            System.out.println(primeNumber);
     }
 }
