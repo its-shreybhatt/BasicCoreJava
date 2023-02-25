@@ -100,5 +100,6 @@ public class BasicCoreJava {
         if (character.equals("a") || character.equals("e") || character.equals("i")|| character.equals("o")|| character.equals("u")){
             System.out.println("its vowel");
         }else System.out.println("its consonant");
+
     }
 }
