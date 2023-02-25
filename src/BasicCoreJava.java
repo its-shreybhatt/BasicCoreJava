@@ -101,5 +101,16 @@ public class BasicCoreJava {
             System.out.println("its vowel");
         }else System.out.println("its consonant");
 
+        // Largest Number
+        int [] array = new int [3];
+        int max =0;
+        System.out.println("Enter 3 numbers -");
+        for (int i =0 ; i<3; i++){
+            array[i]= input.nextInt();
+            if (array[i] > max){
+                max = array[i];
+            }
+        }
+        System.out.println("Maximum number is = " +max);
     }
 }
