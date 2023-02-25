@@ -76,5 +76,15 @@ public class BasicCoreJava {
         int numberTwo = input.nextInt();
         System.out.println("Quotient = " + numberOne / numberTwo);
         System.out.println("Reminder = " + numberOne % numberTwo);
+
+        // Swap two Numbers
+        System.out.println("Enter value of A - ");
+        int valueA = input.nextInt();
+        System.out.println("Enter value of B - ");
+        int valueB = input.nextInt();
+        int temp =valueA;
+        valueA=valueB;
+        valueB=temp;
+        System.out.println("Swapped values are - For A = " +valueA +" For B = " +valueB);
     }
 }
