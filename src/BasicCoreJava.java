@@ -13,6 +13,7 @@ public class BasicCoreJava {
                 tails += 1;
             } else heads += 1;
         }
+
         System.out.println("heads " + heads + "  tails  " + tails);
         System.out.println("percentage of heads " + heads * 100 / flip + "%");
         System.out.println("percentage of tails " + tails * 100 / flip + "%");
