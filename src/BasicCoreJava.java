@@ -34,5 +34,16 @@ public class BasicCoreJava {
                 System.out.println("its leap year ");
             }
         } else System.out.println("not a leap year ");
+
+        // 2^N
+        System.out.println("plz enter the no. ");
+        double numb = input.nextInt();
+        double result = 1;
+        for (int i = 1; i <= numb; i++) {
+            result *= 2;
+        }
+        System.out.println("2^N = " + result);
+        // To check
+        System.out.println("To check using Math.pow = " + Math.pow(2, numb));
     }
 }
