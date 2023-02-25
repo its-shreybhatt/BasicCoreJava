@@ -86,5 +86,12 @@ public class BasicCoreJava {
         valueA=valueB;
         valueB=temp;
         System.out.println("Swapped values are - For A = " +valueA +" For B = " +valueB);
+
+        //Even Odd Number
+        System.out.println("Please enter the no.- " );
+        int evenOdd= input.nextInt();
+        if (evenOdd%2 == 0){
+            System.out.println("Number is Even ");
+        }else System.out.println("Number is Odd");
     }
 }
