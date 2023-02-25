@@ -93,5 +93,12 @@ public class BasicCoreJava {
         if (evenOdd%2 == 0){
             System.out.println("Number is Even ");
         }else System.out.println("Number is Odd");
+
+        // Alphabet
+        System.out.println("Please enter alphabet ");
+        String character = input.next();
+        if (character.equals("a") || character.equals("e") || character.equals("i")|| character.equals("o")|| character.equals("u")){
+            System.out.println("its vowel");
+        }else System.out.println("its consonant");
     }
 }
