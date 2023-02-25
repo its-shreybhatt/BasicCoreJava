@@ -45,5 +45,16 @@ public class BasicCoreJava {
         System.out.println("2^N = " + result);
         // To check
         System.out.println("To check using Math.pow = " + Math.pow(2, numb));
+
+        //Harmonic Number
+        System.out.println("plz enter the no. ");
+        int harmonicNum = input.nextInt();
+        double har = 1.0;
+        System.out.print(har +" ");
+        for (int i = 2; i <= harmonicNum; i++) {
+            har = har + (double) 1 / i;
+            System.out.print((double) 1 / i +"  ");
+        }
+        System.out.println("\nHarmonic no = " +1/har);
     }
 }
