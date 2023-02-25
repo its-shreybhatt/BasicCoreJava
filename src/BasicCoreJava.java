@@ -50,17 +50,17 @@ public class BasicCoreJava {
         System.out.println("plz enter the no. ");
         int harmonicNum = input.nextInt();
         double har = 1.0;
-        System.out.print(har +" ");
+        System.out.print(har + " ");
         for (int i = 2; i <= harmonicNum; i++) {
             har = har + (double) 1 / i;
-            System.out.print((double) 1 / i +"  ");
+            System.out.print((double) 1 / i + "  ");
         }
-        System.out.println("\nHarmonic no = " +1/har);
+        System.out.println("\nHarmonic no = " + 1 / har);
 
         // Prime Factors
         System.out.println("enter the no. :");
         int primeNumber = input.nextInt();
-        for (int i = 2; i*i  <= primeNumber; i++) {
+        for (int i = 2; i * i <= primeNumber; i++) {
             while (primeNumber % i == 0) {
                 System.out.println(i + " ");
                 primeNumber = primeNumber / i;
@@ -68,5 +68,13 @@ public class BasicCoreJava {
         }
         if (primeNumber >= 2)
             System.out.println(primeNumber);
+
+        // Quotient-Remainder
+        System.out.println("Please enter number to divide - ");
+        int numberOne = input.nextInt();
+        System.out.println("Please enter number to divide with- ");
+        int numberTwo = input.nextInt();
+        System.out.println("Quotient = " + numberOne / numberTwo);
+        System.out.println("Reminder = " + numberOne % numberTwo);
     }
 }
