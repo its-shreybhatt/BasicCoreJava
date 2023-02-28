@@ -1,9 +1,22 @@
 import java.util.Scanner;
 
 public class BasicCoreJava {
-    public static void main(String[] args) {
+    static Scanner input = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        flipCoin();
+        leapYear();
+        twoPower_N();
+        harmonicFunction();
+        primeNumber();
+        QuotientRemainder();
+        swapToNumber();
+        evenOdd();
+        alphabet();
+        largestNumber();
+    }
+
+    public static void flipCoin() {
         int heads = 0;
         int tails = 0;
         System.out.println("Enter no of times coin flipped - ");
@@ -18,8 +31,9 @@ public class BasicCoreJava {
         System.out.println("heads " + heads + "  tails  " + tails);
         System.out.println("percentage of heads " + heads * 100 / flip + "%");
         System.out.println("percentage of tails " + tails * 100 / flip + "%");
+    }
 
-        //Leap Year
+    public static void leapYear() {
         System.out.println("plz enter the year ");
         int year = input.nextInt();
         int century = year % 100;
@@ -34,8 +48,9 @@ public class BasicCoreJava {
                 System.out.println("its leap year ");
             }
         } else System.out.println("not a leap year ");
+    }
 
-        // 2^N
+    public static void twoPower_N() {
         System.out.println("plz enter the no. ");
         double numb = input.nextInt();
         double result = 1;
@@ -45,8 +60,9 @@ public class BasicCoreJava {
         System.out.println("2^N = " + result);
         // To check
         System.out.println("To check using Math.pow = " + Math.pow(2, numb));
+    }
 
-        //Harmonic Number
+    public static void harmonicFunction() {
         System.out.println("plz enter the no. ");
         int harmonicNum = input.nextInt();
         double har = 1.0;
@@ -56,8 +72,9 @@ public class BasicCoreJava {
             System.out.print((double) 1 / i + "  ");
         }
         System.out.println("\nHarmonic no = " + 1 / har);
+    }
 
-        // Prime Factors
+    public static void primeNumber() {
         System.out.println("enter the no. :");
         int primeNumber = input.nextInt();
         for (int i = 2; i * i <= primeNumber; i++) {
@@ -68,49 +85,54 @@ public class BasicCoreJava {
         }
         if (primeNumber >= 2)
             System.out.println(primeNumber);
+    }
 
-        // Quotient-Remainder
+    public static void QuotientRemainder() {
         System.out.println("Please enter number to divide - ");
         int numberOne = input.nextInt();
         System.out.println("Please enter number to divide with- ");
         int numberTwo = input.nextInt();
         System.out.println("Quotient = " + numberOne / numberTwo);
         System.out.println("Reminder = " + numberOne % numberTwo);
+    }
 
-        // Swap two Numbers
+    public static void swapToNumber() {
         System.out.println("Enter value of A - ");
         int valueA = input.nextInt();
         System.out.println("Enter value of B - ");
         int valueB = input.nextInt();
-        int temp =valueA;
-        valueA=valueB;
-        valueB=temp;
-        System.out.println("Swapped values are - For A = " +valueA +" For B = " +valueB);
+        int temp = valueA;
+        valueA = valueB;
+        valueB = temp;
+        System.out.println("Swapped values are - For A = " + valueA + " For B = " + valueB);
+    }
 
-        //Even Odd Number
-        System.out.println("Please enter the no.- " );
-        int evenOdd= input.nextInt();
-        if (evenOdd%2 == 0){
+    public static void evenOdd() {
+        System.out.println("Please enter the no.- ");
+        int evenOdd = input.nextInt();
+        if (evenOdd % 2 == 0) {
             System.out.println("Number is Even ");
-        }else System.out.println("Number is Odd");
+        } else System.out.println("Number is Odd");
+    }
 
-        // Alphabet
+    public static void alphabet() {
         System.out.println("Please enter alphabet ");
         String character = input.next();
-        if (character.equals("a") || character.equals("e") || character.equals("i")|| character.equals("o")|| character.equals("u")){
+        if (character.equals("a") || character.equals("e") || character.equals("i") || character.equals("o") || character.equals("u")) {
             System.out.println("its vowel");
-        }else System.out.println("its consonant");
+        } else System.out.println("its consonant");
+    }
 
-        // Largest Number
-        int [] array = new int [3];
-        int max =0;
+    public static void largestNumber() {
+        int[] array = new int[3];
+        int max = 0;
         System.out.println("Enter 3 numbers -");
-        for (int i =0 ; i<3; i++){
-            array[i]= input.nextInt();
-            if (array[i] > max){
+        for (int i = 0; i < 3; i++) {
+            array[i] = input.nextInt();
+            if (array[i] > max) {
                 max = array[i];
             }
         }
-        System.out.println("Maximum number is = " +max);
+        System.out.println("Maximum number is = " + max);
     }
 }
